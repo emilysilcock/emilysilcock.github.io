@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=8">
+  <link rel="stylesheet" href="/style.css?v=9">
 </head>
 <body>
   <header class="site-header">
@@ -28,9 +28,12 @@
     <h2 id="claude-code-plugins">Claude Code Plugins</h2>
     <ul class="pubs">
       <li>
-        <span class="title">Agentic clustering</span>: discover the natural groupings in a collection of texts, then sort every text into them.
-        <span class="links">[<a href="https://github.com/emilysilcock/agentic-clustering/blob/main/plugin/README.md#installation">Install instructions</a>]</span>
-        <span class="links">[<a href="https://arxiv.org/abs/2606.01255">Paper</a>]</span>
+        <span class="title">Agentic clustering</span>
+        <span class="meta">Discover the natural groupings in a collection of texts, then sort every text into them.</span>
+        <span class="links">
+          <a href="https://github.com/emilysilcock/agentic-clustering/blob/main/plugin/README.md#installation">Install instructions</a>
+          <a href="https://arxiv.org/abs/2606.01255">Paper</a>
+        </span>
         <p>Give it a corpus, tell it what you care about (for example &ldquo;group these articles by the policy issue they discuss&rdquo;), and set roughly how many clusters you want. A team of AI agents then builds the taxonomy for you: one proposes clusters, one synthesises them, one audits them, one investigates unclear cases and one critiques the result. An orchestrator steers the whole loop, and it runs unattended until the taxonomy stops changing. You get a readable <code>taxonomy.md</code> with definitions for each cluster.</p>
         <p>A second command classifies your whole corpus into those clusters, giving a label, a confidence score and reasoning for each text. That step can use an LLM, or a small model you train and run on your own machine for free. On seven public text-clustering benchmarks it is state-of-the-art, beating the strongest prior method by 47% in mean ARI.</p>
         <p>To install, run inside Claude Code:</p>
@@ -42,18 +45,18 @@
     <h2 id="datasets">Datasets</h2>
     <ul class="pubs">
       <li>
-        <span class="title">Daily Disability-Related Hate Crimes Recorded by Police Forces in England and Wales, 2013&ndash;2023 (Freedom of Information Returns)</span>,
-        <a href="https://doi.org/10.7910/DVN/KVHQ43">https://doi.org/10.7910/DVN/KVHQ43</a>
-        <ul>
-          <li><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KVHQ43">Harvard Dataverse</a></li>
-        </ul>
+        <span class="title">Daily Disability-Related Hate Crimes Recorded by Police Forces in England and Wales, 2013&ndash;2023 (Freedom of Information Returns)</span>
+        <span class="links">
+          <a href="https://doi.org/10.7910/DVN/KVHQ43">doi:10.7910/DVN/KVHQ43</a>
+          <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KVHQ43">Harvard Dataverse</a>
+        </span>
       </li>
       <li>
-        <span class="title">Daily Alleged Benefit Fraud Reports Recorded by the Department for Work and Pensions in Great Britain and England, 2013&ndash;2023 (Freedom of Information Returns)</span>,
-        <a href="https://doi.org/10.7910/DVN/YNQYKK">https://doi.org/10.7910/DVN/YNQYKK</a>
-        <ul>
-          <li><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FYNQYKK">Harvard Dataverse</a></li>
-        </ul>
+        <span class="title">Daily Alleged Benefit Fraud Reports Recorded by the Department for Work and Pensions in Great Britain and England, 2013&ndash;2023 (Freedom of Information Returns)</span>
+        <span class="links">
+          <a href="https://doi.org/10.7910/DVN/YNQYKK">doi:10.7910/DVN/YNQYKK</a>
+          <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FYNQYKK">Harvard Dataverse</a>
+        </span>
       </li>
     </ul>
   </main>

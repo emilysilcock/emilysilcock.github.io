@@ -20,8 +20,10 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
 
 - The header nav is duplicated in every page (there is no footer). When changing it, update every
   `.html` file (except `home.html`) and set `aria-current="page"` on the current page's link.
-- Publications use `<ul class="pubs">` with `<span class="title">&ldquo;…&rdquo;</span>`,
-  then authors/venue, then `[Arxiv]`-style links in `<span class="links">`. Newest first.
+- Publications use `<ul class="pubs">`; each `<li>` is `<span class="title">` (no quotes),
+  then `<span class="meta">With …. Venue, Year.</span>` (more `.meta` lines allowed, e.g.
+  press coverage), then `<span class="links">` holding bare `<a>`s (`arXiv`, `Dataset`,
+  `Website`…; no brackets, no raw URLs as link text). Newest first.
 - Every page links `/style.css?v=N`. After editing `style.css`, bump `N` in all pages, or
   browsers/GitHub's CDN keep serving the old stylesheet for ~10 minutes.
 - Use internal links without `.html` (`/research`, not `/research.html`).
