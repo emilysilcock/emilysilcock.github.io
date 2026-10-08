@@ -22,6 +22,8 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
   `.html` file (except `home.html`) and set `aria-current="page"` on the current page's link.
 - Publications use `<ul class="pubs">` with `<span class="title">&ldquo;…&rdquo;</span>`,
   then authors/venue, then `[Arxiv]`-style links in `<span class="links">`. Newest first.
+- Every page links `/style.css?v=N`. After editing `style.css`, bump `N` in all pages, or
+  browsers/GitHub's CDN keep serving the old stylesheet for ~10 minutes.
 - Use internal links without `.html` (`/research`, not `/research.html`).
 
 ## Preview & deploy
