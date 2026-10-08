@@ -10,7 +10,7 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
   (GitHub Pages serves `foo.html` at `/foo`, which keeps the old Google Sites URLs working)
 - `privacy.html` — **must stay at `/privacy`**: it is the privacy-policy URL registered for
   the `fasrc-rclone` Google OAuth client (rclone access on FASRC). Don't move, rename, or
-  delete it. It is deliberately not linked from the nav or footer — it's only for Google.
+  delete it. It is deliberately not linked from the nav — it's only for Google.
 - `home.html` — redirect from the old Google Sites `/home` URL to `/`
 - `404.html` — GitHub Pages' not-found page
 - `style.css` — all styling; `images/` — photos
@@ -18,7 +18,7 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
 
 ## Conventions
 
-- The header nav and footer are duplicated in every page. When changing them, update every
+- The header nav is duplicated in every page (there is no footer). When changing it, update every
   `.html` file (except `home.html`) and set `aria-current="page"` on the current page's link.
 - Publications use `<ul class="pubs">` with `<span class="title">&ldquo;…&rdquo;</span>`,
   then authors/venue, then `[Arxiv]`-style links in `<span class="links">`. Newest first.
