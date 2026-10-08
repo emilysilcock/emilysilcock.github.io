@@ -26,6 +26,15 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
   browsers/GitHub's CDN keep serving the old stylesheet for ~10 minutes.
 - Use internal links without `.html` (`/research`, not `/research.html`).
 
+## Domain & DNS
+
+Registrar/DNS: Squarespace Domains (migrated from Google Domains), signed in with Emily's
+gmail Google account. Domain expires 2027-02-17. Records that must stay:
+- `@` A → 185.199.108.153 / .109 / .110 / .111 (GitHub Pages); `www` CNAME → `emilysilcock.github.io`
+- `_github-pages-challenge-emilysilcock` TXT — GitHub Pages verified-domain record (anti-takeover)
+- `4vlw3l7zmnsf` CNAME → `…dv.googlehosted.com` — Google domain verification (likely what the
+  fasrc-rclone OAuth client relies on)
+
 ## Preview & deploy
 
 - Preview locally: `python -m http.server 8000` in this folder, then open http://localhost:8000
