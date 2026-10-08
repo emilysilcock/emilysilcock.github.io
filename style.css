@@ -94,6 +94,9 @@ h2 {
 .intro p:first-child { margin-top: 0; }
 
 .intro img {
+  /* Line spacing + the font's ascender space put the first line's capitals ~0.47em below the
+     top of the paragraph box; offset the photo so its top edge lines up with them. */
+  margin-top: 0.47em;
   width: 100%;
   height: auto;
   border-radius: 6px;
@@ -103,7 +106,7 @@ h2 {
   .site-nav { gap: 0.25rem 0.9rem; font-size: 0.9rem; }
   h2 { margin-top: 2.5rem; }
   .intro { grid-template-columns: 1fr; }
-  .intro img { max-width: 16rem; order: -1; }
+  .intro img { max-width: 16rem; order: -1; margin-top: 0; }
 }
 
 /* ---------- Publication lists ---------- */
