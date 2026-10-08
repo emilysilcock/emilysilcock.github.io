@@ -42,6 +42,7 @@ a:hover { text-decoration-thickness: 2px; }
 .site-nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.25rem 1.25rem;
   font-family: var(--sans);
   font-size: 0.95rem;
@@ -99,6 +100,8 @@ h2 {
 }
 
 @media (max-width: 640px) {
+  .site-nav { gap: 0.25rem 0.9rem; font-size: 0.9rem; }
+  h2 { margin-top: 2.5rem; }
   .intro { grid-template-columns: 1fr; }
   .intro img { max-width: 16rem; order: -1; }
 }
