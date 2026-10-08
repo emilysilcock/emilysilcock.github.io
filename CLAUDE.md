@@ -24,8 +24,8 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
   then `<span class="meta">With …. Venue, Year.</span>` (more `.meta` lines allowed, e.g.
   press coverage), then `<span class="links">` holding bare `<a>`s (`arXiv`, `Dataset`,
   `Website`…; no brackets, no raw URLs as link text). Newest first.
-- Label/value details (contact info, home-page affiliations and CV) use `<dl class="details">`;
-  several `<dd>`s under one `<dt>` stack in the right-hand column.
+- Label/value details (the contact page) use `<dl class="details">`. The home page keeps
+  affiliations and the CV link as prose, deliberately — Emily didn't like them as a list.
 - Every page links `/style.css?v=N`. After editing `style.css`, bump `N` in all pages, or
   browsers/GitHub's CDN keep serving the old stylesheet for ~10 minutes.
 - Use internal links without `.html` (`/research`, not `/research.html`).

@@ -99,7 +99,6 @@ h2 {
 .details dt { grid-column: 1; color: var(--muted); font-size: 0.95rem; }
 .details dd { grid-column: 2; margin: 0; }
 .details dd + dt { margin-top: 0.5rem; }
-p + .details { margin-top: 1.5rem; }
 .details a { text-decoration: none; }
 .details a:hover { text-decoration: underline; }
 
