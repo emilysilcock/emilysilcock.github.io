@@ -10,7 +10,7 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
   (GitHub Pages serves `foo.html` at `/foo`, which keeps the old Google Sites URLs working)
 - `privacy.html` — **must stay at `/privacy`**: it is the privacy-policy URL registered for
   the `fasrc-rclone` Google OAuth client (rclone access on FASRC). Don't move, rename, or
-  delete it, and keep it linked from the footer of every page.
+  delete it. It is deliberately not linked from the nav or footer — it's only for Google.
 - `home.html` — redirect from the old Google Sites `/home` URL to `/`
 - `404.html` — GitHub Pages' not-found page
 - `style.css` — all styling; `images/` — photos

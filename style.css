@@ -36,19 +36,7 @@ a:hover { text-decoration-thickness: 2px; }
   margin: 0 auto;
   padding: 1.25rem 1rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem 1.5rem;
-}
-
-.site-name {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 1.15rem;
-  color: var(--text);
-  text-decoration: none;
-  letter-spacing: -0.01em;
+  justify-content: flex-end;
 }
 
 .site-nav {
