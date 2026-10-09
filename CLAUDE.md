@@ -23,7 +23,10 @@ https://emilysilcock.com. No build step, no framework — edit the HTML directly
 - Publications use `<ul class="pubs">`; each `<li>` is `<span class="title">` (no quotes),
   then `<span class="meta">With …. Venue, Year.</span>` (more `.meta` lines allowed, e.g.
   press coverage), then `<span class="links">` holding bare `<a>`s (`arXiv`, `Dataset`,
-  `Website`…; no brackets, no raw URLs as link text). Newest first.
+  `Website`…; no brackets, no raw URLs as link text). Newest first. Papers with an abstract
+  put `<details class="abstract"><summary>Abstract</summary><p>…</p></details>` first in
+  the `.links` row. Text is copied verbatim from arXiv, except where Emily's latest draft is
+  newer — e.g. Agentic Clustering uses the abstract in `../agentic-clustering/paper/main.tex`.
 - Label/value details (the contact page) use `<dl class="details">`. The home page keeps
   affiliations and the CV link as prose, deliberately — Emily didn't like them as a list.
 - Every page links `/style.css?v=N`. After editing `style.css`, bump `N` in all pages, or

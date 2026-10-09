@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=11">
+  <link rel="stylesheet" href="/style.css?v=12">
 </head>
 <body>
   <header class="site-header">
@@ -44,6 +44,10 @@
         <span class="title">Agentic Clustering: Controllable Text Taxonomies via Multi-Agent Refinement</span>
         <span class="meta">With Simon Löwe. 2026.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Recent text-clustering methods use large language models to propose a cluster taxonomy from a corpus and then assign each text to it. These pipelines are fundamentally programmatic: the sequence of LLM calls and the rules for stopping, merging, and splitting clusters are fixed in code in advance, so they generalise poorly across corpora of different structure and cannot easily incorporate user-supplied constraints such as a target cluster count or a clustering intent. We propose an agentic alternative in which an orchestrator LLM inspects the state of the discovery process at each step and dispatches one of a small set of specialised agents &mdash; proposer, synthesizer, auditor, investigator, and critic &mdash; adapting the pipeline to the corpus rather than executing a fixed one. On seven public text-clustering benchmarks the method achieves state-of-the-art performance, beating the strongest prior baseline by 47% in mean ARI.</p>
+          </details>
           <a href="https://arxiv.org/abs/2606.01255">arXiv</a>
           <a href="https://github.com/emilysilcock/agentic-clustering/blob/main/plugin/README.md#installation">Claude Code plugin</a>
         </span>
@@ -52,6 +56,10 @@
         <span class="title">Newswire: A Large-Scale Structured Database of a Century of Historical News</span>
         <span class="meta">With Abhishek Arora, Luca D'Amico-Wong and Melissa Dell. Conference on Neural Information Processing Systems (NeurIPS), 2024.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>In the U.S. historically, local newspapers drew their content largely from newswires like the Associated Press. Historians argue that newswires played a pivotal role in creating a national identity and shared understanding of the world, but there is no comprehensive archive of the content sent over newswires. We reconstruct such an archive by applying a customized deep learning pipeline to hundreds of terabytes of raw image scans from thousands of local newspapers. The resulting dataset contains 2.7 million unique public domain U.S. newswire articles, written between 1878 and 1977. Locations in these articles are georeferenced, topics are tagged using customized neural topic classification, named entities are recognized, and individuals are disambiguated to Wikipedia using a novel entity disambiguation model. To construct the Newswire dataset, we first recognize newspaper layouts and transcribe around 138 millions structured article texts from raw image scans. We then use a customized neural bi-encoder model to de-duplicate reproduced articles, in the presence of considerable abridgement and noise, quantifying how widely each article was reproduced. A text classifier is used to ensure that we only include newswire articles, which historically are in the public domain. The structured data that accompany the texts provide rich information about the who (disambiguated individuals), what (topics), and where (georeferencing) of the news that millions of Americans read over the course of a century. We also include Library of Congress metadata information about the newspapers that ran the articles on their front pages. The Newswire dataset is useful both for large language modeling &ndash; expanding training data beyond what is available from modern web texts &ndash; and for studying a diversity of questions in computational linguistics, social science, and the digital humanities.</p>
+          </details>
           <a href="https://arxiv.org/abs/2406.09490">arXiv</a>
           <a href="https://huggingface.co/datasets/dell-research-harvard/newswire">Dataset</a>
         </span>
@@ -60,6 +68,10 @@
         <span class="title">Contrastive Entity Coreference and Disambiguation for Historical Texts</span>
         <span class="meta">With Abhishek Arora, Melissa Dell and Leander Heldring. Conference on Empirical Methods in Natural Language Processing (EMNLP), 2024.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Massive-scale historical document collections are crucial for social science research. Despite increasing digitization, these documents typically lack unique cross-document identifiers for individuals mentioned within the texts, as well as individual identifiers from external knowledgebases like Wikipedia/Wikidata. Existing entity disambiguation methods often fall short in accuracy for historical documents, which are replete with individuals not remembered in contemporary knowledgebases. This study makes three key contributions to improve cross-document coreference resolution and disambiguation in historical texts: a massive-scale training dataset replete with hard negatives &ndash; that sources over 190 million entity pairs from Wikipedia contexts and disambiguation pages &ndash; high-quality evaluation data from hand-labeled historical newswire articles, and trained models evaluated on this historical benchmark. We contrastively train bi-encoder models for coreferencing and disambiguating individuals in historical texts, achieving accurate, scalable performance that identifies out-of-knowledgebase individuals. Our approach significantly surpasses other entity disambiguation models on our historical newswire benchmark. Our models also demonstrate competitive performance on modern entity disambiguation benchmarks, particularly certain news disambiguation datasets.</p>
+          </details>
           <a href="https://arxiv.org/abs/2406.15576">arXiv</a>
         </span>
       </li>
@@ -67,6 +79,10 @@
         <span class="title">Data Contamination Report from the 2024 CONDA Shared Task</span>
         <span class="meta">With Oscar Sainz, Iker García-Ferrero, Alon Jacovi, Jon Ander Campos, Yanai Elazar, Eneko Agirre, Yoav Goldberg, Wei-Lin Chen, Jenny Chim, Leshem Choshen, Luca D'Amico-Wong, Melissa Dell, Run-Ze Fan, Shahriar Golchin, Yucheng Li, Pengfei Liu, Bhavish Pahwa, Ameya Prabhu, Suryansh Sharma, Kateryna Solonko, David Stap, Mihai Surdeanu, Yu-Min Tseng, Vishaal Udandarao, Zengzhi Wang, Ruijie Xu and Jinglin Yang. Workshop on Data Contamination (CONDA) at ACL, 2024.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>The 1st Workshop on Data Contamination (CONDA 2024) focuses on all relevant aspects of data contamination in natural language processing, where data contamination is understood as situations where evaluation data is included in pre-training corpora used to train large scale models, compromising evaluation results. The workshop fostered a shared task to collect evidence on data contamination in current available datasets and models. The goal of the shared task and associated database is to assist the community in understanding the extent of the problem and to assist researchers in avoiding reporting evaluation results on known contaminated resources. The shared task provides a structured, centralized public database for the collection of contamination evidence, open to contributions from the community via GitHub pool requests. This first compilation paper is based on 566 reported entries over 91 contaminated sources from a total of 23 contributors. The details of the individual contamination events are available in the platform. The platform continues to be online, open to contributions from the community.</p>
+          </details>
           <a href="https://arxiv.org/abs/2407.21530">arXiv</a>
           <a href="https://aclanthology.org/2024.conda-1.4/">ACL Anthology</a>
         </span>
@@ -75,6 +91,10 @@
         <span class="title">News Deja Vu: Connecting Past and Present with Semantic Search</span>
         <span class="meta">With Brevin Franklin, Abhishek Arora, Tom Bryan and Melissa Dell. Workshop on NLP and Computational Social Science (NLP+CSS) at NAACL, 2024.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Social scientists and the general public often analyze contemporary events by drawing parallels with the past, a process complicated by the vast, noisy, and unstructured nature of historical texts. For example, hundreds of millions of page scans from historical newspapers have been noisily transcribed. Traditional sparse methods for searching for relevant material in these vast corpora, e.g., with keywords, can be brittle given complex vocabularies and OCR noise. This study introduces News Deja Vu, a novel semantic search tool that leverages transformer large language models and a bi-encoder approach to identify historical news articles that are most similar to modern news queries. News Deja Vu first recognizes and masks entities, in order to focus on broader parallels rather than the specific named entities being discussed. Then, a contrastively trained, lightweight bi-encoder retrieves historical articles that are most similar semantically to a modern query, illustrating how phenomena that might seem unique to the present have varied historical precedents. Aimed at social scientists, the user-friendly News Deja Vu package is designed to be accessible for those who lack extensive familiarity with deep learning. It works with large text datasets, and we show how it can be deployed to a massive scale corpus of historical, open-source news articles. While human expertise remains important for drawing deeper insights, News Deja Vu provides a powerful tool for exploring parallels in how people have perceived past and present.</p>
+          </details>
           <a href="https://arxiv.org/abs/2406.15593">arXiv</a>
           <a href="https://newsdejavu.github.io/">Website</a>
         </span>
@@ -83,6 +103,10 @@
         <span class="title">American Stories: A Large-Scale Structured Text Dataset of Historical U.S. Newspapers</span>
         <span class="meta">With Melissa Dell, Jacob Carlson, Tom Bryan, Abhishek Arora, Zejiang Shen, Luca D'Amico-Wong, Quan Le, Pablo Querubin and Leander Heldring. Conference on Neural Information Processing Systems (NeurIPS), 2023.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Existing full text datasets of U.S. public domain newspapers do not recognize the often complex layouts of newspaper scans, and as a result the digitized content scrambles texts from articles, headlines, captions, advertisements, and other layout regions. OCR quality can also be low. This study develops a novel, deep learning pipeline for extracting full article texts from newspaper images and applies it to the nearly 20 million scans in Library of Congress's public domain Chronicling America collection. The pipeline includes layout detection, legibility classification, custom OCR, and association of article texts spanning multiple bounding boxes. To achieve high scalability, it is built with efficient architectures designed for mobile phones. The resulting American Stories dataset provides high quality data that could be used for pre-training a large language model to achieve better understanding of historical English and historical world knowledge. The dataset could also be added to the external database of a retrieval-augmented language model to make historical information &ndash; ranging from interpretations of political events to minutiae about the lives of people's ancestors &ndash; more widely accessible. Furthermore, structured article texts facilitate using transformer-based methods for popular social science applications like topic classification, detection of reproduced content, and news story clustering. Finally, American Stories provides a massive silver quality dataset for innovating multimodal layout analysis models and other multimodal applications.</p>
+          </details>
           <a href="https://arxiv.org/abs/2308.12477">arXiv</a>
           <a href="https://dell-research-harvard.github.io/resources/americanstories">Website</a>
           <a href="https://huggingface.co/datasets/dell-research-harvard/AmericanStories">Dataset</a>
@@ -92,6 +116,10 @@
         <span class="title">A Massive Scale Semantic Similarity Dataset of Historical English</span>
         <span class="meta">With Abhishek Arora and Melissa Dell. Conference on Neural Information Processing Systems (NeurIPS), 2023.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>A diversity of tasks use language models trained on semantic similarity data. While there are a variety of datasets that capture semantic similarity, they are either constructed from modern web data or are relatively small datasets created in the past decade by human annotators. This study utilizes a novel source, newly digitized articles from off-copyright, local U.S. newspapers, to assemble a massive-scale semantic similarity dataset spanning 70 years from 1920 to 1989 and containing nearly 400M positive semantic similarity pairs. Historically, around half of articles in U.S. local newspapers came from newswires like the Associated Press. While local papers reproduced articles from the newswire, they wrote their own headlines, which form abstractive summaries of the associated articles. We associate articles and their headlines by exploiting document layouts and language understanding. We then use deep neural methods to detect which articles are from the same underlying source, in the presence of substantial noise and abridgement. The headlines of reproduced articles form positive semantic similarity pairs. The resulting publicly available HEADLINES dataset is significantly larger than most existing semantic similarity datasets and covers a much longer span of time. It will facilitate the application of contrastively trained semantic similarity models to a variety of tasks, including the study of semantic change across space and time.</p>
+          </details>
           <a href="https://arxiv.org/abs/2306.17810">arXiv</a>
           <a href="https://huggingface.co/datasets/dell-research-harvard/headlines-semantic-similarity">Dataset</a>
         </span>
@@ -100,6 +128,10 @@
         <span class="title">Noise-Robust De-Duplication at Scale</span>
         <span class="meta">With Luca D'Amico Wong, Jinglin Yang and Melissa Dell. International Conference on Learning Representations (ICLR), 2023.</span>
         <span class="links">
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Identifying near duplicates within large, noisy text corpora has a myriad of applications that range from de-duplicating training datasets, reducing privacy risk, and evaluating test set leakage, to identifying reproduced news articles and literature within large corpora. Across these diverse applications, the overwhelming majority of work relies on N-grams. Limited efforts have been made to evaluate how well N-gram methods perform, in part because it is unclear how one could create an unbiased evaluation dataset for a massive corpus. This study uses the unique timeliness of historical news wires to create a 27,210 document dataset, with 122,876 positive duplicate pairs, for studying noise-robust de-duplication. The time-sensitivity of news makes comprehensive hand labelling feasible &ndash; despite the massive overall size of the corpus &ndash; as duplicates occur within a narrow date range. The study then develops and evaluates a range of de-duplication methods: hashing and N-gram overlap (which predominate in the literature), a contrastively trained bi-encoder, and a re-rank style approach combining a bi- and cross-encoder. The neural approaches significantly outperform hashing and N-gram overlap. We show that the bi-encoder scales well, de-duplicating a 10 million article corpus on a single GPU card in a matter of hours. We also apply our pre-trained model to the RealNews and patent portions of C4 (Colossal Clean Crawled Corpus), illustrating that a neural approach can identify many near duplicates missed by hashing, in the presence of various types of noise. The public release of our NEWS-COPY de-duplication dataset, codebase, and the pre-trained models will facilitate further research and applications.</p>
+          </details>
           <a href="https://arxiv.org/abs/2210.04261">arXiv</a>
           <a href="https://openreview.net/forum?id=bAz2DBS35i">ICLR</a>
           <a href="https://www.nber.org/papers/w30726">NBER</a>
